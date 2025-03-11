@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Geleria de fotos</title>
+</head>
+<body>
+    <header>
+        <h1>Galeria de Imagens: Um Mosaico de Emoções e Histórias.</h1>
+        <p>
+            Bem-vindo(a) à nossa galeria, onde cada fotografia é uma janela para um universo único.
+            Aqui, momentos congelados no tempo se transformam em narrativas visuais que emocionam,
+            inspiram e provocam reflexão. De retratos íntimos que capturam a essência da alma a paisagens
+            deslumbrantes que desafiam a escala humana, cada imagem é um convite a explorar novas perspectivas.
+        </p>
+        <button id="btnNovaImagem" type="button">Nova imagem +</button>
+    </header>
+    <form id="newImage">
+        <h2>Inserir nova imagem:</h2>
+        <input id="inputURL" required type="url" placeholder="URL da imagem">
+        <button id="btnAdicionar" type="submit">Adicionar</button>
+        <button id="btnCancelar" type="reset">Cancelar</button>
+    </form>
+    <ul id="imageList">
+        <li>
+            <img src="./imagens/fotopalmeira.png" title="Ver imagem em tamanho real" alt="Imagem de uma palmeira.">
+            <div class="overlay-imagem-link">
+                <a href="./imagens/fotopalmeira.png" target="_blank" >Ver imagem em tamanho real.</a>
+            </div>
+        </li>
+        <li>
+            <img src="./imagens/fotopalmeira.png" title="Ver imagem em tamanho real" alt="Imagem de uma palmeira.">
+            <div class="overlay-imagem-link">
+                <a href="./imagens/fotopalmeira.png" target="_blank" >Ver imagem em tamanho real.</a>
+            </div>
+        </li>
+        <li>
+            <img src="./imagens/fotopalmeira.png" title="Ver imagem em tamanho real" alt="Imagem de uma palmeira.">
+            <div class="overlay-imagem-link">
+                <a href="./imagens/fotopalmeira.png" target="_blank" >Ver imagem em tamanho real.</a>
+            </div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

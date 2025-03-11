@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Noto+Sans+Syriac:wght@100..900&family=Ruluko&family=Signika+Negative:wght@300..700&display=swap');
+
+*{
+    background-color: #100b04;
+    font-family: "Average Sans", sans-serif;
+    color: #f2e9db;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vw;
+    margin-left: 15vw;
+}
+
+header p{
+    margin-top: 1vw;
+    max-width: 20vw;
+    font-weight: 400;
+}
+
+#btnNovaImagem{
+    position: absolute;
+    margin-top: 5vw;
+    margin-left: 30vw;
+    background-color: #f7a527;
+    color: #100b04;
+    width: 8vw;
+    height: 3vw;
+    border-radius: 8px;
+    box-shadow: 0vw 0vw 0.5vw #e698248f;
+}
+
+#btnNovaImagem:hover{
+    transform:translateY(-0.03vw);
+    background-color: #e69824;
+    transition: ease 0.2s;
+}
+
+#newImage{
+    display: none;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 1vw;
+    max-width: 40vw;
+    height: 20vh;
+    margin-top: 10vh;
+    margin-left: 15vw;
+    animation: ease 0.2s;
+}
+
+#inputURL{
+    margin-left: 1vw;
+    outline: none;
+    background-color: #f2e9db;
+    color: #100b04;
+    max-width: 12vw;
+    height: 5vh;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#btnAdicionar{
+    height: 4vh;
+    width: 8vw;
+    position: absolute;
+    margin-top: 0.5vh;
+    margin-left: 4vw;
+    background-color: #3b7044;
+    border-radius: 8px;
+}
+
+#btnAdicionar:hover{
+    background-color: #305c37;
+    transition: ease 0.2s;
+}
+
+#btnCancelar{
+    height: 4vh;
+    width: 8vw;
+    position: absolute;
+    margin-top: 6.5vh;
+    margin-left: 4vw;
+    background-color: #9e0250;
+    border-radius: 8px;
+}
+
+#btnCancelar:hover{
+    background-color: #77003c;
+    transition: ease 0.2s;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li{
+    margin: 0.1vw;
+    max-height: 280px;
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    overflow-y: hidden;
+}
+
+ul li a{
+    background: none;
+}
+
+ul li img{
+    width: 100%;
+}
+
+.overlay-imagem-link{
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+ul li:hover .overlay-imagem-link{
+    opacity: 1;
+
+}
+
+#imageList{
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+
